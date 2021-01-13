@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="ASCII"?>
+<openclProject:OpenCLProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:openclProject="http://www.xilinx.com/openclproject" name="canny" location="/home/centos/workspace/canny" platform="/home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm" platformUID="xilinx:aws-vu9p-f1:shell-v04261818:201920.2(custom)" systemProject="canny_system" sysConfig="config0_0" cpu="x86" cpuInstance="x86" os="Linux">
+  <configuration name="Emulation-SW" id="com.xilinx.accelerated.config.sw_emu.1946043165">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="hmacSha1Kernel">
+        <kernels name="hmacSha1Kernel_1" sourceFile="src/kernel/hmacSha1Kernel1.cpp">
+          <computeUnits name="hmacSha1Kernel_1_1" slr="SLR0">
+            <args name="inputData" master="true" memory="DDR[0]"/>
+            <args name="outputData" master="true" memory="DDR[0]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+        <kernels name="hmacSha1Kernel_2" sourceFile="src/kernel/hmacSha1Kernel2.cpp">
+          <computeUnits name="hmacSha1Kernel_2_1" slr="SLR1">
+            <args name="inputData" master="true" memory="DDR[1]"/>
+            <args name="outputData" master="true" memory="DDR[1]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+        <kernels name="hmacSha1Kernel_3" sourceFile="src/kernel/hmacSha1Kernel3.cpp">
+          <computeUnits name="hmacSha1Kernel_3_1" slr="SLR2">
+            <args name="inputData" master="true" memory="DDR[2]"/>
+            <args name="outputData" master="true" memory="DDR[2]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+        <kernels name="hmacSha1Kernel_4" sourceFile="src/kernel/hmacSha1Kernel4.cpp">
+          <computeUnits name="hmacSha1Kernel_4_1" slr="SLR3">
+            <args name="inputData" master="true" memory="DDR[3]"/>
+            <args name="outputData" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="hmacSha1Kernel">
+        <kernels name="hmacSha1Kernel_1" sourceFile="src/kernel/hmacSha1Kernel1.cpp">
+          <computeUnits name="hmacSha1Kernel_1_1" slr="SLR0">
+            <args name="inputData" master="true" memory="DDR[0]"/>
+            <args name="outputData" master="true" memory="DDR[0]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+        <kernels name="hmacSha1Kernel_2" sourceFile="src/kernel/hmacSha1Kernel2.cpp">
+          <computeUnits name="hmacSha1Kernel_2_1" slr="SLR1">
+            <args name="inputData" master="true" memory="DDR[1]"/>
+            <args name="outputData" master="true" memory="DDR[1]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+        <kernels name="hmacSha1Kernel_3" sourceFile="src/kernel/hmacSha1Kernel3.cpp">
+          <computeUnits name="hmacSha1Kernel_3_1" slr="SLR2">
+            <args name="inputData" master="true" memory="DDR[2]"/>
+            <args name="outputData" master="true" memory="DDR[2]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+        <kernels name="hmacSha1Kernel_4" sourceFile="src/kernel/hmacSha1Kernel4.cpp">
+          <computeUnits name="hmacSha1Kernel_4_1" slr="SLR3">
+            <args name="inputData" master="true" memory="DDR[3]"/>
+            <args name="outputData" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.accelerated.config.hw_emu.123976577" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="hmacSha1Kernel">
+        <kernels name="hmacSha1Kernel_1" sourceFile="src/kernel/hmacSha1Kernel1.cpp">
+          <computeUnits name="hmacSha1Kernel_1_1" slr="SLR0">
+            <args name="inputData" master="true" memory="DDR[0]"/>
+            <args name="outputData" master="true" memory="DDR[0]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+        <kernels name="hmacSha1Kernel_2" sourceFile="src/kernel/hmacSha1Kernel2.cpp">
+          <computeUnits name="hmacSha1Kernel_2_1" slr="SLR1">
+            <args name="inputData" master="true" memory="DDR[1]"/>
+            <args name="outputData" master="true" memory="DDR[1]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+        <kernels name="hmacSha1Kernel_3" sourceFile="src/kernel/hmacSha1Kernel3.cpp">
+          <computeUnits name="hmacSha1Kernel_3_1" slr="SLR2">
+            <args name="inputData" master="true" memory="DDR[2]"/>
+            <args name="outputData" master="true" memory="DDR[2]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+        <kernels name="hmacSha1Kernel_4" sourceFile="src/kernel/hmacSha1Kernel4.cpp">
+          <computeUnits name="hmacSha1Kernel_4_1" slr="SLR3">
+            <args name="inputData" master="true" memory="DDR[3]"/>
+            <args name="outputData" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.accelerated.config.hw.1946357733" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw">
+      <binaryContainers name="hmacSha1Kernel">
+        <kernels name="hmacSha1Kernel_1" sourceFile="src/kernel/hmacSha1Kernel1.cpp">
+          <computeUnits name="hmacSha1Kernel_1_1" slr="SLR0">
+            <args name="inputData" master="true" memory="DDR[0]"/>
+            <args name="outputData" master="true" memory="DDR[0]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+        <kernels name="hmacSha1Kernel_2" sourceFile="src/kernel/hmacSha1Kernel2.cpp">
+          <computeUnits name="hmacSha1Kernel_2_1" slr="SLR1">
+            <args name="inputData" master="true" memory="DDR[1]"/>
+            <args name="outputData" master="true" memory="DDR[1]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+        <kernels name="hmacSha1Kernel_3" sourceFile="src/kernel/hmacSha1Kernel3.cpp">
+          <computeUnits name="hmacSha1Kernel_3_1" slr="SLR2">
+            <args name="inputData" master="true" memory="DDR[2]"/>
+            <args name="outputData" master="true" memory="DDR[2]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+        <kernels name="hmacSha1Kernel_4" sourceFile="src/kernel/hmacSha1Kernel4.cpp">
+          <computeUnits name="hmacSha1Kernel_4_1" slr="SLR3">
+            <args name="inputData" master="true" memory="DDR[3]"/>
+            <args name="outputData" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="inputData" master="true"/>
+          <args name="outputData" master="true"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+</openclProject:OpenCLProject>

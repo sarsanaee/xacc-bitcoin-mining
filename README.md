@@ -1,0 +1,1 @@
+# xacc-bitcoin-mining
