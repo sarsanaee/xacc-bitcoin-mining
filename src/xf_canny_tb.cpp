@@ -38,8 +38,8 @@ int main(int argc, char** argv)
 	cl::Event event_sp_edge;
 	cl::CommandQueue q(context, device, CL_QUEUE_PROFILING_ENABLE);
 
-	int64_t kernel_input = 5;
-	int64_t kernel_output;
+	uint64_t kernel_input = 5;
+	uint64_t kernel_output;
 
 	cl::Buffer buf_inputToKernel(context, CL_MEM_READ_ONLY, 64);
 	cl::Buffer buf_resultFromKernel(context, CL_MEM_WRITE_ONLY, 64);
@@ -64,6 +64,8 @@ int main(int argc, char** argv)
 	q.finish();
 
 	printf("\nHost read: %d\n", kernel_output);
+	std::cout << "Host cout read: " << kernel_output << std::endl;
+	std::cout << "Host cout 32bit read: " << (unsigned int)(kernel_output&0xffffffff) << std::endl;
 
 	//clReleaseProgram(program);
 

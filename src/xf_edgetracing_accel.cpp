@@ -43,7 +43,7 @@ extern "C"
 
 		printf("\n allocating hash input streams \n");
 
-		ap_uint <640> input_data = 123456789; //should be 640bit (80byte) total to hash
+		ap_uint <32> input_data = 0; //should be 640bit (80byte) total to hash
 
 		hls::stream <ap_uint <32>> msg_strm; //in
 		hls::stream <ap_uint <64>> len_strm; //in
@@ -54,7 +54,7 @@ extern "C"
 		printf("\n inserting hash input \n");
 		end_len_strm.write(false);
 		msg_strm.write(input_data);
-		len_strm.write(80); //640 bit, 80 byte (64 = 2x32)
+		len_strm.write(4); //640 bit, 80 byte (64 = 2x32)
 
 
 		end_len_strm.write(true);
@@ -78,6 +78,8 @@ extern "C"
 		printf("\n done reading hash \n");
 
 		printf("Hash after: %i", (int)hash);
+
+		*kernel_output = (ap_uint<64>)hash;
 
 
 		printf("\nKernel is done\n");
