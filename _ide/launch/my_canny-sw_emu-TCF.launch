@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.xilinx.opencl.launch.openCLLaunch.tcf">
+    <stringAttribute key="SDACCEL_DATA_TRANSFER_TRACE" value="coarse"/>
+    <booleanAttribute key="SDACCEL_ENABLE_LOP_TRACE" value="false"/>
+    <booleanAttribute key="SDACCEL_ENABLE_PROFILE" value="true"/>
+    <stringAttribute key="SDACCEL_STALL_TRACE" value="off"/>
+    <stringAttribute key="SDACCEL_TIMELINE_REPORT_STRING" value="Default"/>
+    <booleanAttribute key="SDX_DO_BINARY_CONTAINERS_ARGS" value="false"/>
+    <booleanAttribute key="SDX_USE_DEFAULT_WORKING_DIR" value="true"/>
+    <stringAttribute key="TRACE_BUFFER_SIZE" value="1M"/>
+    <stringAttribute key="TRACE_INTERVAL" value="10"/>
+    <booleanAttribute key="TRACE_OFFLOAD" value="false"/>
+    <stringAttribute key="com.xilinx.ide.dc.standalone.debug.executable" value=""/>
+    <stringAttribute key="com.xilinx.ide.dc.standalone.debug.kernels" value=""/>
+    <stringAttribute key="com.xilinx.ide.dc.standalone.debug.target.flow" value="sw_emu"/>
+    <booleanAttribute key="com.xilinx.sdx.internal.opencl.language.ui.launch.tcf.stop_at_kernal_start" value="true"/>
+    <booleanAttribute key="com.xilinx.sdx.internal.opencl.language.ui.launch.tcf.stop_at_main" value="true"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_ARGUMENTS" value="../../libs/xf_opencv/data/512x512.jpg"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Emulation-SW/my_canny"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="my_canny"/>
+    <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="com.xilinx.accelerated.config.sw_emu.949059306"/>
+    <stringAttribute key="org.eclipse.cdt.launch.WORKING_DIRECTORY" value="${workspace_loc:my_canny}/Emulation-SW/my_canny-sw_emu-TCF"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/my_canny"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+    <mapAttribute key="org.eclipse.debug.core.environmentVariables">
+        <mapEntry key="ENABLE_KERNEL_DEBUG" value="false"/>
+        <mapEntry key="ENHANCED_CPU_EM" value="true"/>
+        <mapEntry key="LD_LIBRARY_PATH" value="${env_var:OPENCV_LIB}:${env_var:LD_LIBRARY_PATH}:${env_var:XILINX_XRT}/lib"/>
+        <mapEntry key="XCL_EMULATION_MODE" value="sw_emu"/>
+        <mapEntry key="XILINX_OPENCL" value="${env_var:XILINX_VITIS}/"/>
+        <mapEntry key="XILINX_VITIS" value="${env_var:XILINX_VITIS}/"/>
+    </mapAttribute>
+    <booleanAttribute key="org.eclipse.tcf.debug.AttachChildren" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.DisconnectOnCtxExit" value="true"/>
+    <stringAttribute key="org.eclipse.tcf.debug.LocalProgramFile" value="Emulation-SW/my_canny"/>
+    <stringAttribute key="org.eclipse.tcf.debug.PeerID" value="XRT_Server"/>
+    <stringAttribute key="org.eclipse.tcf.debug.ProgramArguments" value="../../libs/xf_opencv/data/512x512.jpg"/>
+    <stringAttribute key="org.eclipse.tcf.debug.ProjectName" value="my_canny"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.RunLocalAgent" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.RunLocalServer" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.StopAtEntry" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.StopAtMain" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.UseContextFilter" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.UseLocalAgent" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.UseTerminal" value="true"/>
+    <stringAttribute key="org.eclipse.tcf.debug.WorkingDirectory" value="/home/centos/workspace/my_canny/Emulation-SW/my_canny-sw_emu-TCF"/>
+</launchConfiguration>
